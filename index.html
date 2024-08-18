@@ -103,6 +103,92 @@
         </div>
     </section>
 
+    <section class="therapeutic-follow-up">
+        <h2 class="section-title">Como ocorre o acompanhamento terapêutico?</h2>
+        <div class="follow-up-container">
+            <img src="Cristina Cruzeiro-2.png" alt="Imagem ilustrativa" class="follow-up-image">
+            <div class="follow-up-item">
+                <div class="icon-text">
+                    <span class="icon">❤️</span>
+                    <p>Cada sessão é realizada sob medida adaptada à necessidade individual de cada cliente.</p>
+                </div>
+            </div>
+            <div class="follow-up-item">
+                <div class="icon-text">
+                    <span class="icon">💬</span>
+                    <p>Juntos, cliente e terapeuta definem metas claras e realistas. Essas metas ajudam a direcionar as sessões e avaliar o progresso.</p>
+                </div>
+            </div>
+            <div class="follow-up-item">
+                <div class="icon-text">
+                    <span class="icon">📅</span>
+                    <p>As sessões terapêuticas ocorrem uma vez por semana, com duração de aproximadamente 50 minutos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+    <h2 class="section-title">Perguntas Frequentes</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">Qual é o processo de terapia?</button>
+            <div class="faq-answer">
+                <p>Aqui você colocará a resposta para essa pergunta.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Como sei se preciso de terapia?</button>
+            <div class="faq-answer">
+                <p>Aqui você colocará a resposta para essa pergunta.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Quanto tempo dura cada sessão?</button>
+            <div class="faq-answer">
+                <p>Aqui você colocará a resposta para essa pergunta.</p>
+            </div>
+        </div>
+        <!-- Adicione mais perguntas e respostas conforme necessário -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const faqItems = document.querySelectorAll('.faq-item');
+        
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question');
+                    const answer = item.querySelector('.faq-answer');
+        
+                    // Inicia com a resposta oculta
+                    answer.style.maxHeight = '0';
+                    answer.style.opacity = '0';
+        
+                    question.addEventListener('click', function() {
+                        const isVisible = answer.style.maxHeight !== '0px';
+        
+                        // Fechar todas as outras respostas abertas antes de abrir a atual
+                        faqItems.forEach(i => {
+                            const ans = i.querySelector('.faq-answer');
+                            ans.style.maxHeight = '0';
+                            ans.style.opacity = '0';
+                        });
+        
+                        // Abre ou fecha a resposta clicada
+                        if (!isVisible) {
+                            answer.style.maxHeight = answer.scrollHeight + 'px';
+                            answer.style.opacity = '1';
+                        } else {
+                            answer.style.maxHeight = '0';
+                            answer.style.opacity = '0';
+                        }
+                    });
+                });
+            });
+        </script>        
+        
+        
+    </div>
+    </section>
+
     <footer>
         <div class="footer-content">
             <img src="Plano de Fundo.png" alt="Cristina Cruzeiro - Terapia & Bem-estar" class="logo-footer">
