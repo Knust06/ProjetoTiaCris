@@ -268,3 +268,38 @@ footer {
     padding: 10px 0; /* Espaçamento interno para o texto */
 }
 
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-and-image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .whatsapp-button {
+        display: inline-flex;
+        align-items: center;
+        background-color: #25D366;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+}
