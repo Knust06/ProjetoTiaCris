@@ -100,6 +100,15 @@ h1 {
     margin-bottom: 20px;
 }
 
+.about h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+    color: #6a1b9a;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .video-container {
     display: flex;
     justify-content: center;
@@ -303,3 +312,192 @@ footer {
         margin-top: 20px;
     }
 }
+
+.inconvenience-section {
+    padding: 40px 20px;
+    background-color: #fafafa;
+}
+
+.inconvenience-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.inconvenience-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+    flex: 1;
+}
+
+.inconvenience-text {
+    flex: 1.5;
+    max-width: 600px;
+}
+
+.inconvenience-text h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5em;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+.inconvenience-text ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
+.inconvenience-text ul li::before {
+    content: "• ";
+    color: #6a1b9a;
+    font-weight: bold;
+}
+
+.inconvenience-text p {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.inconvenience-text p:last-child {
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .inconvenience-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .inconvenience-image img {
+        margin-bottom: 20px;
+    }
+
+    .inconvenience-text {
+        max-width: 100%;
+    }
+}
+
+.quote-section {
+    background-color: #6a1b9a;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 40px;
+}
+
+.quote-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-content p {
+    font-size: 1.8em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.quote-author {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: right;
+}
+
+.highlight-banner {
+    background-color: #6a1b9a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 20px; /* Espaço adicionado entre a imagem e o banner */
+    margin-bottom: 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.highlight-banner p {
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Certifica-se de que o texto esteja branco */
+}
+
+.about {
+    padding: 40px 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 60px; /* Espaçamento entre as seções */
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1.5;
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-text h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5em;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
