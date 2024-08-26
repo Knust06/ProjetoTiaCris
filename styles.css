@@ -499,5 +499,37 @@ footer {
     }
 }
 
+.video-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5em;
+    color: #6a1b9a;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container iframe {
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
 
 
